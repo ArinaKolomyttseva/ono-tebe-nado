@@ -1,12 +1,11 @@
 /* место для вашего кода */
 .header {
-  height: 293px;
+  padding: 92px 50px 96px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   background-color: #fff;
   z-index: 3;
   align-items: center;
-  padding: 0 50px;
   font-size: 18px;
 }
 
@@ -32,17 +31,23 @@
 
 .address {
   font-style: normal;
+  text-align: start;
   line-height: 1.35;
+  font-size: 18px;
 }
 
 .header__address {
   justify-self: end;
+  width: 240px;
 }
 
 .cover {
   color: #fff;
   position: relative;
   background: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 0 50px 50px;
   display: flex;
   flex-direction: column;
@@ -81,12 +86,14 @@ h1 {
   text-align: end;
   display: block;
 }
+
 .cover__description {
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
 }
+
 .cover__description-text {
   text-transform: uppercase;
   z-index: 2;
@@ -106,6 +113,7 @@ h1 {
   font-weight: 500;
   font-size: 22px;
   display: block;
+  font-family: Raleway, sans-serif;
 }
 
 .lots {
@@ -151,6 +159,7 @@ h1 {
   list-style: none;
   display: flex;
   gap: 25px;
+  flex-wrap: wrap;
 }
 
 .lots__card-list-item {
@@ -220,12 +229,10 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.address {
-  text-align: start;
-}
-
 .footer__menu {
   text-align: center;
+  font-size: 18px;
+  line-height: 1.174;
 }
 
 .footer__links-list {
@@ -234,7 +241,6 @@ h1 {
 
 .footer__social-list {
   display: flex;
-  align-items: center;
   list-style: none;
   gap: 48px;
   justify-self: end;
