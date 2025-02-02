@@ -1,6 +1,6 @@
 /* место для вашего кода */
 .header {
-  padding: 92px 50px 96px;
+  padding: 86px 50px 89px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   background-color: #fff;
@@ -133,7 +133,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 596px;
+  height: 100%;
   line-height: 1.2;
   background-position: 50%;
   background-size: cover;
@@ -163,7 +163,8 @@ h1 {
 }
 
 .lots__card-list-item {
-  flex: 1;
+  width: calc((100% - 50px) / 3);
+  min-height: 596px;
 }
 
 .card_type_film {
